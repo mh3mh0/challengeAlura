@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./assets/images/fox.png" type="image/icon type" />
+
+    <link rel="stylesheet" href="./style.css" />
+    <title>Encryptions!</title>
+  </head>
+  <body>
+    <main>
+      <nav class="navbar">
+        <h1>Foxy helps!</h1>
+        <img src="./assets/images/fox.png" alt="fox" />
+      </nav>
+      <hr />
+      <div class="main-wrapper">
+        <div class="text-wrapper">
+          <textarea
+            name="texto-a-encriptar"
+            class="text-area"
+            id="texto-encriptar"
+            placeholder="Write your message here"
+          ></textarea>
+          <div class="buttons buttons-encriptar">
+            <button class="btn" id="encriptar">Encrypt</button>
+            <button class="btn" id="desencriptar">Decrypt</button>
+          </div>
+
+          <textarea
+            name="resultado"
+            class="text-area"
+            id="resultado"
+            placeholder="El resultado se verá acá."
+          ></textarea>
+          <div class="buttons buttons-copiDelete">
+            <button class="btn btn-copiar" id="copiar">Copy</button>
+            <button
+              class="btn btn-borrar"
+              id="borrar"
+              onclick="javascript:borrarTexto();"
+            >
+              Erase
+            </button>
+          </div>
+        </div>
+      </div>
+      <footer>by mh3mh0</footer>
+    </main>
+    <script src="js/borrar.js"></script>
+    <script src="js/claves.js"></script>
+    <script src="js/encriptar.js"></script>
+    <script src="js/copiar.js"></script>
+    <script src="js/desencriptar.js"></script>
+    <script src="js/validarTexto.js"></script>
+  </body>
+</html>

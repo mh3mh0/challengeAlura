@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Sedgwick+Ave&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Eater&display=swap");
+:root {
+  --black: #322f2c;
+  --color1: #ed7233;
+  --color2: #bfc1be;
+  --color3: #edd5ae;
+  --color4: #d4ee81;
+  --color5: #121a23de;
+  --sm: 14px;
+  --md: 16px;
+  --lg: 18px;
+  --xl: 32px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Sedgwick Ave", cursive;
+  background-color: var(--color4);
+  height: 100vh;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 100px 0;
+}
+nav h1 {
+  margin-top: 50px;
+  font-size: 50px;
+  color: var(--color5);
+  font-family: "Eater", cursive;
+}
+nav img {
+  position: relative;
+  height: 110px;
+  width: 110px;
+}
+
+.main-wrapper {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.text-area {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 68px;
+  background: var(--color3);
+  font-size: var(--md);
+  font-family: "Sedgwick Ave", cursive;
+  color: var(--black);
+  border-radius: 3px;
+  border: 4px solid var(--color1);
+  outline: none;
+  text-align: center;
+}
+.buttons {
+  display: flex;
+  justify-content: center;
+}
+.btn {
+  margin: 20px;
+  height: 40px;
+  width: 100px;
+  cursor: pointer;
+  border-color: var(--color1);
+  border-radius: 5px;
+  font-family: "Sedgwick Ave", cursive;
+  font-size: var(--lg);
+}
+.btn:hover {
+  background-color: var(--color2);
+}
+
+footer {
+  padding: 40px;
+  text-align: center;
+  font-size: var(--xl);
+  background-image: url(./assets/images/foxbg.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  color: var(--color5);
+  font-family: "Eater", cursive;
+}
+
+@media (max-width: 700px) {
+  nav h1 {
+    margin-top: 25px;
+    font-size: 25px;
+    color: var(--color5);
+    font-family: "Eater", cursive;
+  }
+  nav img {
+    position: relative;
+    height: 60px;
+    width: 60px;
+  }
+}
